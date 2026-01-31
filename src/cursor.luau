@@ -515,9 +515,9 @@ end
 
 local function pushstr(cursor: Cursor, x: string, length: number?): ()
 	local len = length or #x
+	tryrealloc(cursor, len)
 	local buf = getbuf(cursor)
 	local pos = getpos(buf)
-	tryrealloc(cursor, len)
 	buffer.writestring(buf, pos, x)
 	setpos(buf, pos + len)
 
@@ -536,9 +536,9 @@ end
 
 local function pushbuf(cursor: Cursor, x: buffer, length: number?): ()
 	local len = length or buffer.len(x)
+	tryrealloc(cursor, len)
 	local buf = getbuf(cursor)
 	local pos = getpos(buf)
-	tryrealloc(cursor, len)
 	buffer.copy(buf, pos, x, 0, len)
 	setpos(buf, pos + len)
 
