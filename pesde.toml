@@ -1,5 +1,5 @@
 name = "metatablesnow/deep_delta"
-version = "3.0.4"
+version = "1.0.0"
 description = "Unofficial port of DeepDelta 3.0.4 to Pesde."
 repository = "https://github.com/metatablesnow/DeepDelta/tree/main"
 authors = ["Sona"]

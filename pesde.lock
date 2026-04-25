@@ -2,5 +2,5 @@
 # It is not intended for manual editing.
 format = 2
 name = "metatablesnow/deep_delta"
-version = "3.0.4"
+version = "1.0.0"
 target = "roblox"
