@@ -4,8 +4,8 @@ local Cursor = require("@self/Cursor")
 
 -- value type codes
 local TY_NIL = 0
-local TY_STRING  = 1
-local TY_NUMBER  = 2
+local TY_STRING = 1
+local TY_NUMBER = 2
 local TY_TRUE = 3
 local TY_FALSE = 4
 local TY_TABLE = 5
